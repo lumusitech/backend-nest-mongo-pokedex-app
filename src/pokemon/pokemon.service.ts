@@ -29,8 +29,8 @@ export class PokemonService {
     }
   }
 
-  findAll() {
-    return this.pokemonModel.find();
+  async findAll() {
+    return await this.pokemonModel.find();
   }
 
   async findOne(term: string) {
@@ -77,8 +77,11 @@ export class PokemonService {
     }
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} pokemon`;
+  async remove(id: string) {
+    // const pokemon = await this.findOne(id);
+    // await pokemon.deleteOne();
+
+    return { id };
   }
 
   private handleExceptions(error: any) {
