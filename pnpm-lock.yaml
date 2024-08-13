@@ -41,6 +41,9 @@ importers:
       class-validator:
         specifier: ^0.14.1
         version: 0.14.1
+      joy:
+        specifier: ^0.1.1
+        version: 0.1.1
       mongoose:
         specifier: ^8.4.5
         version: 8.4.5
@@ -1956,6 +1959,9 @@ packages:
     peerDependenciesMeta:
       node-notifier:
         optional: true
+
+  joy@0.1.1:
+    resolution: {integrity: sha512-WaLP/th9h/2MNmWybHuImd40Ilo8zfpHe9NdcaHhuq9vX+RSKBEHw6HOC3WFmgcWTsN4gvpZTxmEEKXZbDLFdA==}
 
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -5368,6 +5374,8 @@ snapshots:
       - babel-plugin-macros
       - supports-color
       - ts-node
+
+  joy@0.1.1: {}
 
   js-tokens@4.0.0: {}
 
