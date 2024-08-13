@@ -19,10 +19,10 @@ export class SeedService {
     await this.pokemonModel.deleteMany({});
 
     const { data } = await this.axios.get<PokeResponse>(
-      'https://pokeapi.co/api/v2/pokemon?limit=10',
+      'https://pokeapi.co/api/v2/pokemon?limit=650',
     );
 
-    const insertPromisesArray = [];
+    const pokemonsToInsert: { name: string; nro: number }[] = [];
 
     data.results.forEach(({ name, url }) => {
       const segments = url.split('/');
@@ -31,10 +31,10 @@ export class SeedService {
       const nro = +segments[segments.length - 2];
       // 1 (id number from url)
 
-      insertPromisesArray.push(this.pokemonModel.create({ name, nro }));
+      pokemonsToInsert.push({ name, nro });
     });
 
-    await Promise.all(insertPromisesArray);
+    await this.pokemonModel.insertMany(pokemonsToInsert);
 
     return 'Seed executed';
   }
