@@ -52,4 +52,4 @@
 - [class-validator](https://www.npmjs.com/package/class-validator): Allows use of decorator and non-decorator based validation. Internally uses validator.js to perform validation. Class-validator works on both browser and node.js platforms.
 - [axios](https://www.npmjs.com/package/axios): Axios es un Cliente HTTP basado en promesas para node.js y el navegador. Es isomorfico (= puede ejecutarse en el navegador y nodejs con el mismo código base). En el lado del servidor usa el modulo nativo http de node.js, mientras que en el lado del cliente (navegador) usa XMLHttpRequests.
 - [@nestjs/config](https://www.npmjs.com/package/@nestjs/config): Configuration module for Nest based on the dotenv (to load process environment variables) package.
-- [joy](https://www.npmjs.com/package/joy): Delightfully simple schema validation.
+- [joi](https://www.npmjs.com/package/joi): The most powerful schema description language and data validator for JavaScript.
