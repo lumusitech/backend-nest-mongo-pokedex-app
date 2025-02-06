@@ -26,13 +26,15 @@
    docker compose up -d
    ```
 
-4. Start Dev server
+4. Clone **.env.template** file and rename to **.env**. Then, complete properties.
+
+5. Start Dev server
 
    ```sh
    pnpm start:dev
    ```
 
-5. Rebuild DB with SEED
+6. Rebuild DB with SEED
 
    ```http
    http://localhost:3000/api/v2/seed
