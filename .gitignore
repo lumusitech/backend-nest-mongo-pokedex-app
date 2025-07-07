@@ -10,6 +10,7 @@ npm-debug.log*
 pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarn.lock
 lerna-debug.log*
 
 # OS
@@ -37,6 +38,7 @@ lerna-debug.log*
 
 # dotenv environment variable files
 .env
+.env.prod
 .env.development.local
 .env.test.local
 .env.production.local
