@@ -40,6 +40,15 @@
    http://localhost:3000/api/v2/seed
    ```
 
+## Production Build
+
+1. Create the `.env.prod` file based on the `.env.template` file.
+2. Create the new project image
+
+   ```sh
+   docker compose -f docker-compose.prod.yaml --env-file .env.prod up --build -d
+   ```
+
 ## Stack
 
 - MongoDB
